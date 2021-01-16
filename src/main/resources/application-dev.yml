@@ -12,12 +12,8 @@ spring:
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     hibernate:
       ddl-auto: validate
-  profiles:
-    active: dev 
-
-           
 server:
-  port: 4004  
+  port: 4001  
    
 eureka:
   instance:
