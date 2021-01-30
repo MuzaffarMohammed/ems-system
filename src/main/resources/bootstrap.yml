@@ -1,0 +1,14 @@
+#########################################################
+# Classpath properties:
+# 
+# CONFIG.SERVER.HTTP.PROTOCOL - default(http) , could be given as https
+# CONFIG.SERVER.ADDRESS - default(localhost)
+# CONFIG.SERVER.PORT - default(4341)
+##########################################################
+spring:
+  cloud:
+    config:
+      enabled: true
+      uri:
+      - ${CONFIG.SERVER.HTTP.PROTOCOL:http}://${CONFIG.SERVER.ADDRESS:localhost}:${CONFIG.SERVER.PORT:4341}
+      label: HEAD   
